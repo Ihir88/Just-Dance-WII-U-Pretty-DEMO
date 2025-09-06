@@ -1,104 +1,91 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Just Dance Pretty DEMO — Community Mod</title>
-  <meta name="description" content="Just Dance Pretty — a fan-made mod for Wii U, PC, and more. New songs, visuals, and features. Download and install guides inside." />
-  <meta property="og:title" content="Just Dance Pretty — Community Mod" />
-  <meta property="og:description" content="Mod DEMO by ihir888 for Wii U, PC, and more. New songs, visuals, and features." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="" />
-  <link rel="icon" href="/favicon.ico" />
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html { scroll-behavior: smooth; }
-    .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.75); }
-    .chip { @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium border; }
+    body { 
+      background: url('https://images.wallpaperscraft.ru/image/single/planeta_koltso_fioletovyj_149425_3840x2160.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    a, summary { cursor: pointer; }
+    /* Прозорі кнопки і картки */
+    .bg-white, .border { background: rgba(255,255,255,0.05) !important; border-color: rgba(255,255,255,0.2) !important; color: #fff !important; }
+    a { color: #fff !important; text-decoration: none; }
+    a:hover { color: #ff77ff !important; }
+    summary::marker { color: #fff; }
   </style>
 </head>
-<body class="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-pink-50 text-slate-800">
+<body>
+
   <!-- Header -->
-  <header class="sticky top-0 z-50 border-b bg-white/80 backdrop-blur">
+  <header class="sticky top-0 z-50 border-b border-white/20 bg-white/10 backdrop-blur">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <a href="#home" class="flex items-center gap-3 select-none">
           <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Just_Dance_Logo_2023.jpg" alt="logo" class="w-7 h-7" />
-          <span class="font-extrabold tracking-tight text-lg">Just Dance <span class="text-pink-600">Pretty DEMO</span></span>
+          <span class="font-extrabold tracking-tight text-lg">Just Dance <span class="text-pink-400">Pretty DEMO</span></span>
         </a>
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-          <a href="#features" class="hover:text-pink-600">Features</a>
-          <a href="#platforms" class="hover:text-pink-600">Platforms</a>
-          <a href="#downloads" class="hover:text-pink-600">Download</a>
-          <a href="#install" class="hover:text-pink-600">Install Guide</a>
-          <a href="#gallery" class="hover:text-pink-600">Gallery</a>
-          <a href="#faq" class="hover:text-pink-600">FAQ</a>
+          <a href="#features">Features</a>
+          <a href="#platforms">Platforms</a>
+          <a href="#downloads">Download</a>
+          <a href="#install">Install Guide</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#faq">FAQ</a>
         </nav>
-        <a href="#downloads" class="inline-flex items-center rounded-2xl bg-pink-600 px-4 py-2 text-white text-sm font-semibold shadow hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-400">Get the Mod</a>
+        <a href="#downloads" class="inline-flex items-center rounded-2xl px-4 py-2">Get the Mod</a>
       </div>
     </div>
-  </header>  <!-- Hero -->  <section id="home" class="relative overflow-hidden">
-    <div class="absolute inset-0 -z-10">
-      <svg aria-hidden="true" class="absolute -top-24 -right-24 w-[40rem] opacity-20" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <path fill="#F472B6" d="M53.4,-49.8C66.6,-38.4,73.1,-19.2,71.4,-1.2C69.7,16.9,59.9,33.7,46.7,49.3C33.6,64.9,16.8,79.4,-1.2,80.9C-19.1,82.5,-38.2,71,-51.8,55.3C-65.5,39.7,-73.7,19.8,-73.7,0C-73.7,-19.7,-65.4,-39.5,-51.7,-50.9C-38.1,-62.4,-19,-65.6,0.1,-65.7C19.2,-65.7,38.4,-62.5,53.4,-49.8Z" transform="translate(100 100)" />
-      </svg>
-    </div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-      <div class="grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">Just Dance Pretty DEMO
-            <span class="block text-pink-600">Mod by ihir888</span>
-          </h1>
-          <p class="mt-5 text-lg text-slate-600">A fresh community mod for Just Dance with new songs, refined visuals, and QoL tweaks. Available on <strong>Wii U</strong>, <strong>PC</strong>, and more.</p>
-          <div class="mt-6 flex flex-wrap gap-3">
-            <a href="#downloads" class="inline-flex items-center rounded-xl bg-pink-600 px-5 py-3 text-white font-semibold shadow hover:bg-pink-700">Download</a>
-            <a href="#trailer" class="inline-flex items-center rounded-xl border border-slate-300 px-5 py-3 font-semibold hover:border-slate-400">Watch Trailer</a>
-          </div>
-          <div class="mt-6 flex flex-wrap gap-2 text-xs">
-            <span class="chip border-pink-200">New Tracks</span>
-            <span class="chip border-indigo-200">Custom UI</span>
-            <span class="chip border-emerald-200">Controller Support</span>
-            <span class="chip border-amber-200">Online-Friendly</span>
-          </div>
-        </div>
-        <div class="glass rounded-3xl shadow-xl p-3">
-          <img src="https://media.discordapp.net/attachments/1290671508766720050/1411043413712834580/New_Project_24_B416169.png?ex=68b33815&is=68b1e695&hm=2827a5fd451afce864fe74da6da0785e41b8ece210b3a944544a2e79358a9f67&=&format=webp&quality=lossless&width=816&height=459" alt="Game preview" class="rounded-2xl object-cover w-full h-[340px]" />
+  </header>
+ <div class="glass rounded-3xl shadow-xl p-3">
+          <img src="https://i.postimg.cc/VvcfKZRz/New-Project-24-027753-B.webp" alt="Game preview" class="rounded-2xl object-cover w-full h-[340px]" />
         </div>
       </div>
     </div>
-  </section>  <!-- Features -->  <section id="features" class="py-16">
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-extrabold mb-8">Why you'll love it</h2>
       <div class="grid md:grid-cols-3 gap-6">
-        <article class="bg-white rounded-2xl shadow p-6">
+        <article class="rounded-2xl shadow p-6">
           <h3 class="font-bold text-lg">Curated Songlist</h3>
-          <p class="mt-2 text-slate-600">Handpicked tracks with fair scoring maps and polished choreography ports.</p>
+          <p class="mt-2">Handpicked tracks with fair scoring maps and polished choreography ports.</p>
         </article>
-        <article class="bg-white rounded-2xl shadow p-6">
+        <article class="rounded-2xl shadow p-6">
           <h3 class="font-bold text-lg">Smoother UX</h3>
-          <p class="mt-2 text-slate-600">Songs, lots, games menu </p>
+          <p class="mt-2">Songs, lots, games menu</p>
         </article>
-        <article class="bg-white rounded-2xl shadow p-6">
+        <article class="rounded-2xl shadow p-6">
           <h3 class="font-bold text-lg">Play</h3>
-          <p class="mt-2 text-slate-600">play anywhere PC, Wii U and more.</p>
+          <p class="mt-2">Play anywhere: PC, Wii U and more.</p>
         </article>
       </div>
     </div>
-  </section>  <!-- Platforms -->  <section id="platforms" class="py-16 bg-white">
+  </section>
+
+  <!-- Platforms Section -->
+  <section id="platforms" class="py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-extrabold mb-8">Supported Platforms</h2>
       <div class="grid md:grid-cols-3 gap-6">
         <div class="rounded-2xl border p-6">
           <h3 class="font-bold text-lg">Wii U</h3>
-          <ul class="mt-2 list-disc list-inside text-slate-600">
+          <ul class="mt-2 list-disc list-inside">
             <li>Works with Cemu Emulator, Real Wii U</li>
-            <li>discover new songs and play them</li>
+            <li>Discover new songs and play them</li>
             <li>User interface by kleopy</li>
           </ul>
         </div>
         <div class="rounded-2xl border p-6">
           <h3 class="font-bold text-lg">PC</h3>
-          <ul class="mt-2 list-disc list-inside text-slate-600">
+          <ul class="mt-2 list-disc list-inside">
             <li>Windows 10/11</li>
             <li>Phone Controller</li>
             <li>Optional 60 FPS patch</li>
@@ -106,123 +93,154 @@
         </div>
         <div class="rounded-2xl border p-6">
           <h3 class="font-bold text-lg">Soon</h3>
-          <ul class="mt-2 list-disc list-inside text-slate-600">
+          <ul class="mt-2 list-disc list-inside">
             <li>It will be soon</li>
-            <li></li>
-            <li></li>
           </ul>
         </div>
       </div>
     </div>
-  </section>  <!-- Downloads -->  <section id="downloads" class="py-16">
+  </section>
+
+  <!-- Downloads Section -->
+  <section id="downloads" class="py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-extrabold mb-8">Download the Mod</h2>
       <div class="grid md:grid-cols-3 gap-6">
-        <!-- Wii U card -->
-        <div class="bg-white rounded-2xl shadow p-6 flex flex-col">
+        <div class="rounded-2xl shadow p-6 flex flex-col">
           <div class="flex items-center justify-between">
             <h3 class="font-bold text-lg">Wii U</h3>
             <span class="text-xs px-2 py-1 rounded-full bg-emerald-100 text-emerald-800">Stable</span>
           </div>
-          <p class="mt-2 text-slate-600">Cemu Emulator Or Real Wii U.</p>
-          <ul class="mt-3 text-sm text-slate-600 list-disc list-inside">
+          <p class="mt-2">Cemu Emulator Or Real Wii U.</p>
+          <ul class="mt-3 text-sm list-disc list-inside">
             <li>Size: ~2.1 GB</li>
             <li>Version: v1.0.0</li>
             <li>Updated: 2025-08-29</li>
           </ul>
-          <a href="https://drive.google.com/drive/folders/17P-E6IjabX14TyvvqmOvT4vujZTOZz7v?usp=drive_link" class="User interface by kleopy">Download</a>
-          <a href="#checksums" class="mt-2 text-xs text-slate-500 underline">SHA-256 & checksums</a>
+          <a href="https://drive.google.com/drive/folders/17P-E6IjabX14TyvvqmOvT4vujZTOZz7v">Download</a>
+          <a href="#checksums" class="mt-2 text-xs underline">SHA-256 & checksums</a>
         </div>
-        <!-- PC card -->
-        <div class="bg-white rounded-2xl shadow p-6 flex flex-col">
+        <div class="rounded-2xl shadow p-6 flex flex-col">
           <div class="flex items-center justify-between">
             <h3 class="font-bold text-lg">PC (Windows)</h3>
             <span class="text-xs px-2 py-1 rounded-full bg-amber-100 text-amber-800">Beta</span>
           </div>
-          <p class="mt-2 text-slate-600">Installer with optional 60 FPS patch.</p>
-          <ul class="mt-3 text-sm text-slate-600 list-disc list-inside">
+          <p class="mt-2">Installer with optional 60 FPS patch.</p>
+          <ul class="mt-3 text-sm list-disc list-inside">
             <li>Size: ~2.4 GB</li>
             <li>Version: v1.0-beta</li>
             <li>Updated: 2025-08-29</li>
           </ul>
-          <a href="#" class="mt-4 inline-flex justify-center items-center rounded-xl bg-indigo-600 px-4 py-2 text-white font-semibold hover:bg-indigo-700">Download .zip</a>
-          <a href="#checksums" class="mt-2 text-xs text-slate-500 underline">SHA-256 & checksums</a>
+          <a href="#" class="mt-4 inline-flex justify-center items-center rounded-xl px-4 py-2">Download .zip</a>
+          <a href="#checksums" class="mt-2 text-xs underline">SHA-256 & checksums</a>
         </div>
-        <!-- Other platforms card -->
-        <div class="bg-white rounded-2xl shadow p-6 flex flex-col">
+        <div class="rounded-2xl shadow p-6 flex flex-col">
           <div class="flex items-center justify-between">
             <h3 class="font-bold text-lg">Soon</h3>
             <span class="text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-800">Experimental</span>
           </div>
-          <p class="mt-2 text-slate-600">It will be soon</p>
-          <ul class="mt-3 text-sm text-slate-600 list-disc list-inside">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <a href="#" class="mt-4 inline-flex justify-center items-center rounded-xl bg-indigo-600 px-4 py-2 text-white font-semibold hover:bg-indigo-700">See options</a>
+          <p class="mt-2">It will be soon</p>
+          <a href="#" class="mt-4 inline-flex justify-center items-center rounded-xl px-4 py-2">See options</a>
         </div>
       </div>
-      <p class="mt-4 text-xs text-slate-500">Note: Links are placeholders — replace them with your real files (Drive, Mega, direct, etc.).</p>
     </div>
-  </section>  <!-- Installation Guides -->  <section id="install" class="py-16 bg-white">
+  </section>
+
+  <!-- Installation Section -->
+  <section id="install" class="py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-extrabold mb-8">Installation</h2>
       <div class="grid md:grid-cols-3 gap-6">
-        <details class="bg-white rounded-2xl border p-6 group open:shadow">
-          <summary class="font-bold cursor-pointer">Wii U </summary>
-          <ol class="mt-3 list-decimal list-inside text-slate-700 space-y-2 text-sm">
-            <li>Download the</li>
-            <li>zip folder, <code> file the file folder,</code> and put it in the emulator.). <code></code>.</li>
-            <li>Real Wii U</li>
-            <li>Download the folder and add the folder to games and open wii u and play.</li>
+        <details class="rounded-2xl border p-6">
+          <summary class="font-bold">Wii U</summary>
+          <ol class="mt-3 list-decimal list-inside text-sm">
+            <li>Download the zip folder and put it in the emulator.</li>
+            <li>Real Wii U: Add the folder to games and open Wii U to play.</li>
           </ol>
         </details>
-        <details class="bg-white rounded-2xl border p-6 group open:shadow">
-          <summary class="font-bold cursor-pointer">PC (Windows)</summary>
-          <ol class="mt-3 list-decimal list-inside text-slate-700 space-y-2 text-sm">
-            <li>zip folder, unzip the zip</li>
-            <li>folder and add it to the game's inbox</li>
-            <li>enjoy the game.<em></em></li>
+        <details class="rounded-2xl border p-6">
+          <summary class="font-bold">PC (Windows)</summary>
+          <ol class="mt-3 list-decimal list-inside text-sm">
+            <li>Unzip the folder and add it to the game's directory.</li>
+            <li>Run the installer and enjoy the game.</li>
           </ol>
         </details>
-        <details class="bg-white rounded-2xl border p-6 group open:shadow">
-          <summary class="font-bold cursor-pointer">soon</summary>
-          <ol class="mt-3 list-decimal list-inside text-slate-700 space-y-2 text-sm">
+        <details class="rounded-2xl border p-6">
+          <summary class="font-bold">Soon</summary>
+          <ol class="mt-3 list-decimal list-inside text-sm">
             <li>..</li>
-            <li>..</li>
-            <li>..</code>.</li>
           </ol>
         </details>
       </div>
-      <p class="mt-4 text-xs text-slate-500">This mod and free.</p>
     </div>
-      <p class="mt-2 text-center text-sm text-slate-500"></p>
+  </section>
+<!-- Галерея -->
+<section id="gallery" class="py-16" style="background: transparent;">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-4xl font-extrabold mb-10 tracking-tight text-white"> Screenshots</h2>
+
+    <div id="lightgallery" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="https://i.postimg.cc/tg3SqK9K/image.jpg" data-sub-html="<h4>Menu Preview</h4>">
+        <img src="https://i.postimg.cc/tg3SqK9K/image.jpg"
+             alt="Menu preview"
+             class="rounded-xl object-cover w-full h-56 cursor-pointer hover:scale-105 transition-transform duration-300 shadow-lg"/>
+      </a>
+
+      <a href="https://i.postimg.cc/FKrCT9tT/Screenshot-20250905-103733-Cemu.webp" data-sub-html="<h4>Gameplay Preview</h4>">
+        <img src="https://i.postimg.cc/FKrCT9tT/Screenshot-20250905-103733-Cemu.webp"
+             alt="Gameplay preview"
+             class="rounded-xl object-cover w-full h-56 cursor-pointer hover:scale-105 transition-transform duration-300 shadow-lg"/>
+      </a>
+
+      <a href="https://i.postimg.cc/rmpSB3sC/Screenshot-20250905-145910-Cemu.webp" data-sub-html="<h4>Settings Preview</h4>">
+        <img src="https://i.postimg.cc/rmpSB3sC/Screenshot-20250905-145910-Cemu.webp"
+             alt="Settings preview"
+             class="rounded-xl object-cover w-full h-56 cursor-pointer hover:scale-105 transition-transform duration-300 shadow-lg"/>
+      </a>
+
+      <a href="https://i.postimg.cc/pXBDqK2t/Screenshot-20250829-195707-Cemu.webp" data-sub-html="<h4>Gameplay Preview</h4>">
+        <img src="https://i.postimg.cc/pXBDqK2t/Screenshot-20250829-195707-Cemu.webp"
+             alt="Gameplay preview"
+             class="rounded-xl object-cover w-full h-56 cursor-pointer hover:scale-105 transition-transform duration-300 shadow-lg"/>
+      </a>
     </div>
-  </section>  <!-- Gallery -->  <section id="gallery" class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-extrabold mb-8">Screenshots</h2>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <img class="rounded-xl object-cover w-full h-56" src="https://media.discordapp.net/attachments/1410599712075022520/1411019837056090394/Screenshot_20250829_190033_Cemu.jpg?ex=68b32220&is=68b1d0a0&hm=41b480089fcb059946e0494e5a45a38c618a7a838c1be4b67d88c98dfb2d3a6a&=&format=webp&width=722&height=431" alt="Menu preview" />
-        <img class="rounded-xl object-cover w-full h-56" src="https://media.discordapp.net/attachments/1290671508766720050/1411032331099181236/Screenshot_20250829_195707_Cemu.jpg?ex=68b32dc3&is=68b1dc43&hm=defe4d0f059c5e0464a73f61d71f6380faa132a31636fb90c77f2984632dcb75&=&format=webp&width=722&height=431" alt="Gameplay preview" />
-        <img class="rounded-xl object-cover w-full h-56" src="https://media.discordapp.net/attachments/1290671508766720050/1411032330616832192/Screenshot_20250829_195725_Cemu.jpg?ex=68b32dc3&is=68b1dc43&hm=cf1ec3c49d65904805d4ca27d6d0a169f7634bf2f10797d3479dea421de5b75d&=&format=webp&width=722&height=431" alt="Settings preview" />
-      </div>
-    </div>
-  </section>  <!-- Checksums -->  <section id="checksums" class="py-16">
+  </div>
+</section>
+
+<!-- LightGallery CSS & JS -->
+<link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+
+<script>
+  lightGallery(document.getElementById('lightgallery'), {
+    plugins: [lgZoom, lgThumbnail],
+    speed: 500,
+    download: false,
+    fullscreen: true
+  });
+</script>
+
+
+  <!-- Checksums Section -->
+  <section id="checksums" class="py-16">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl font-extrabold mb-4">Checksums</h2>
-      <p class="text-sm text-slate-600">Publish hashes to help users verify file integrity after download.</p>
-      <pre class="mt-4 p-4 bg-slate-900 text-slate-100 rounded-xl overflow-auto text-xs">WIIU_v1.0.0.zip  SHA-256: YOUR_HASH_HERE
+      <pre class="mt-4 p-4 rounded-xl overflow-auto text-xs">WIIU_v1.0.0.zip  SHA-256: YOUR_HASH_HERE
 PC_v0.9.2-beta.exe SHA-256: YOUR_HASH_HERE
 SWITCH_pack.zip   SHA-256: YOUR_HASH_HERE</pre>
     </div>
-  </section>  <!-- Changelog & FAQ -->  <section id="faq" class="py-16 bg-white">
+  </section>
+
+  <!-- Changelog & FAQ Section -->
+  <section id="faq" class="py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10">
       <div>
         <h2 class="text-2xl font-extrabold mb-4">Changelog</h2>
         <ul class="space-y-3 text-sm">
           <li class="p-4 rounded-xl border">v1.0.0 — These songs and menu will be updated soon</li>
-          <li class="p-4 rounded-xl border">v1.0-бета— PC beta.</li>
+          <li class="p-4 rounded-xl border">v1.0-beta — PC beta.</li>
         </ul>
       </div>
       <div>
@@ -230,31 +248,38 @@ SWITCH_pack.zip   SHA-256: YOUR_HASH_HERE</pre>
         <div class="space-y-3">
           <details class="p-4 rounded-xl border">
             <summary class="font-semibold">Is this mod free?</summary>
-            <p class="mt-2 text-sm text-slate-700">Yes,so play on the whole platform for free</p>
+            <p class="mt-2 text-sm">Yes, play on the whole platform for free.</p>
           </details>
           <details class="p-4 rounded-xl border">
             <summary class="font-semibold">Do I need to own the game?</summary>
-            <p class="mt-2 text-sm text-slate-700">Yes. Please support the original developers — use legally owned copies.</p>
+            <p class="mt-2 text-sm">Yes. Support the original developers — use legally owned copies.</p>
           </details>
           <details class="p-4 rounded-xl border">
             <summary class="font-semibold">PC controller</summary>
-            <p class="mt-2 text-sm text-slate-700">The phone controller requires the Just Dance Controller app and play.</p>
+            <p class="mt-2 text-sm">Phone controller requires the Just Dance Controller app.</p>
           </details>
         </div>
       </div>
     </div>
-  </section>  <!-- Footer -->  <footer class="py-10 border-t">
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-white/20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-        <p class="text-sm text-slate-500">© <span id="year"></span> Just Dance Pretty — Fan-made project. Not affiliated with Ubisoft.</p>
+        <p class="text-sm">© <span id="year"></span> Just Dance Pretty — Fan-made project. Not affiliated with Ubisoft.</p>
         <div class="flex items-center gap-3 text-sm">
-          <a class="underline text-slate-600" href="">Report a bug</a>
-          <a class="underline text-slate-600" href="https://discord.gg/xBGhctSA">Discord</a>
-          <a class="underline text-slate-600" href="https://github.com/Ihir88">GitHub</a>
+          <a href="">Report a bug</a>
+          <a href="https://discord.gg/xBGhctSA">Discord</a>
+          <a href="https://github.com/Ihir88">GitHub</a>
         </div>
       </div>
     </div>
-  </footer>  <script>
+  </footer>
+
+  <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-  </script></body>
+  </script>
+
+</body>
 </html>
